@@ -1,0 +1,151 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Phone Image */
+.phone {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.phone img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Login Box */
+.login {
+    flex: 1;
+    max-width: 350px;
+}
+
+.login-box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #0073e6;
+}
+
+/* OR Separator */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.separator p {
+    margin: 0 10px;
+    color: #8e8e8e;
+}
+
+/* Facebook Login */
+.fb-login {
+    color: #385185;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fb-icon {
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Forgot Password */
+.forgot-password {
+    color: #00376b;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Signup Box */
+.signup-box {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 15px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+}
+
+.signup-box a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 🔥 RESPONSIVE DESIGN 🔥 */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .phone {
+        display: none; /* Hide phone image on small screens */
+    }
+
+    .login {
+        width: 100%;
+        max-width: 350px;
+    }
+}
